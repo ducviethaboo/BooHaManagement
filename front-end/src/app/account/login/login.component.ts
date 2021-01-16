@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from './login-token.service';
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -20,10 +21,7 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    this.loginService.login(this.account, this.password).subscribe(
-      data => {
-        console.log(data);
-      }
-    )
+    this.loginService.login(this.account, this.password)
   }
+  
 }

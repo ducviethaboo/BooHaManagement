@@ -6,6 +6,8 @@ import { Observable  } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class LoginService {
 
   private baseUrl = 'http://127.0.0.1:8000/api/login';
@@ -14,14 +16,7 @@ export class LoginService {
     private http: HttpClient,
   ) { }
 
-  login(account: string, password: string): Observable<any> {
-    var reqHeader = new HttpHeaders({
-      'Content-Type': 'application/json',
-    });
-    var data = {
-      "account": account,
-      "password": password
-    };
-    return this.http.post(`${this.baseUrl}`, data, {headers: reqHeader, responseType: 'json'});
+  login(account: any, password: any): Observable<any> {
+    return this.http.post(`${this.baseUrl}`, account, password);
   }
 }

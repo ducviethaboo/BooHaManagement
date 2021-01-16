@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94e67dff-b435-469d-a6ef-9c2a7d011376" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/back-end/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/app/account/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/app/account/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/app/account/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/app/account/login/login.component.ts" afterDir="false" />
-    </list>
+    <list default="true" id="94e67dff-b435-469d-a6ef-9c2a7d011376" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +148,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610784497437</updated>
       <workItem from="1610784498623" duration="1027000" />
-      <workItem from="1610785731525" duration="945000" />
+      <workItem from="1610785731525" duration="1202000" />
     </task>
     <servers />
   </component>
