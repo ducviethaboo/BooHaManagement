@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -25,15 +26,18 @@ import {MatIconModule} from '@angular/material/icon';
 
 import { LoginComponent } from './account/login/login.component';
 import { from } from 'rxjs';
+import { HomeComponent } from './core/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     HttpClientModule,
     ReactiveFormsModule,
+    AppRoutingModule,
     FormsModule,
     BrowserModule,
     AppRoutingModule,
