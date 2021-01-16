@@ -20,21 +20,24 @@
         <div class="card shadow-lg p-3 mb-5 rounded">
             <b style="text-align: center;">Đăng nhập vào hệ thống</b>
             <div class="card-body mt-3">
+                <div *ngIf="error">
+                    <p style="text-align: center;" class="text-danger">{{ error }}</p>
+                </div>
                 <div class="mb-3">
                     <mat-form-field class="example-full-width">
-                        <input name="account" type="text" matInput placeholder="Tài khoản">
+                        <input [(ngModel)]="account" name="account" type="text" matInput placeholder="Tài khoản">
                     </mat-form-field>
                 </div>
                 <div class="mb-3">
                     <mat-form-field class="example-full-width">
-                        <input name="pass" matInput [type]="hide ? 'password' : 'text'" placeholder="Mật khẩu">
+                        <input [(ngModel)]="password" name="pass" matInput [type]="hide ? 'password' : 'text'" placeholder="Mật khẩu">
                         <a mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                         </a>
                     </mat-form-field>
                 </div>
                 <div style="text-align: center;" class="mb-3">
-                    <button class="btn">Đăng nhập</button>
+                    <button (click)="login()" class="btn">Đăng nhập</button>
                 </div>
             </div>
         </div>

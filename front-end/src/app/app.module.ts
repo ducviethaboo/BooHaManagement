@@ -1,11 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 //material
@@ -29,6 +32,7 @@ import { from } from 'rxjs';
     LoginComponent
   ],
   imports: [
+    HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
     BrowserModule,
@@ -38,7 +42,7 @@ import { from } from 'rxjs';
     MatIconModule
 
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
