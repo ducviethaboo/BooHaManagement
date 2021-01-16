@@ -20,6 +20,9 @@
         <div class="card shadow-lg p-3 mb-5 rounded">
             <b style="text-align: center;">Đăng nhập vào hệ thống</b>
             <div class="card-body mt-3">
+                <div *ngIf="error">
+                    <p style="text-align: center;" class="text-danger">{{ error }}</p>
+                </div>
                 <div class="mb-3">
                     <mat-form-field class="example-full-width">
                         <input [(ngModel)]="account" name="account" type="text" matInput placeholder="Tài khoản">
