@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(212, 139, 4);
+}
+
+mat-form-field {
+    width: 330px;
+}
+
+button {
+    background-color: rgb(238, 157, 7);
+}
+
+button:hover {
+    background-color: rgb(202, 133, 4);
+}
+
+#logo {
+    margin-top: 30px;
+    margin-left: -25px;
+    text-align: center;
+    font-family: Parkavenue, cursive;
+    font-size: 80px;
+}
+
+#brand {
+    text-align: center;
+    font-size: 40px;
+    margin-top: -30px;
+    font-family: Courier New, monospace;
+}
+
+#phone {
+    text-align: center;
+    font-size: 25px;
+    margin-top: -15px;
+    margin-left: -20px;
+    font-family: Arnoldboecklin, fantasy;
+}
+
+.card {
+    width: 25rem;
+    height: 25rem;
+    margin-top: 30px;
+}
