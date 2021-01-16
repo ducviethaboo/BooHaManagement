@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginService } from 'src/app/login.service';
+import { Router } from '@angular/router';
+import { LoginService } from 'src/app/account/login/login.service';
 
 
 @Component({
@@ -15,7 +16,8 @@ export class LoginComponent implements OnInit {
 
 
   constructor(
-    private loginService: LoginService
+    private loginService: LoginService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -27,9 +29,12 @@ export class LoginComponent implements OnInit {
         if(data === null) {
           this.error = 'Tài khoản không tồn tại'
         } 
-        localStorage.setItem('token', data.token)
+        localStorage.setItem('token', data.token);
+        this.router.navigate(['home']);
       }
     )
   }
+
+  
   
 }
