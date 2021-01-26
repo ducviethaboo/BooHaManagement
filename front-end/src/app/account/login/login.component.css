@@ -3,6 +3,10 @@ body {
     overflow: scroll;
 }
 
+.example-card {
+    max-width: 400px;
+}
+
 mat-form-field {
     width: 330px;
 }

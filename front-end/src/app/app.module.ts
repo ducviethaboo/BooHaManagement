@@ -16,6 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
+
 
 
 
@@ -43,7 +45,8 @@ import { HomeComponent } from './core/home/home.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
 
   ],
   providers: [ ],
