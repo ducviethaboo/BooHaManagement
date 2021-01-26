@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94e67dff-b435-469d-a6ef-9c2a7d011376" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/front-end/src/app/account/login/login-token.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/app/account/login/login-token.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/account/login/login-token.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/account/login/login-token.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/account/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/app/account/login/login.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

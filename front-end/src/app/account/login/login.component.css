@@ -1,5 +1,6 @@
 body {
     background-color: rgb(212, 139, 4);
+    overflow: scroll;
 }
 
 mat-form-field {
@@ -18,7 +19,7 @@ button:hover {
     margin-top: 30px;
     margin-left: -25px;
     text-align: center;
-    font-family: Parkavenue, cursive;
+    font-family: cursive;
     font-size: 80px;
 }
 
@@ -34,7 +35,7 @@ button:hover {
     font-size: 25px;
     margin-top: -15px;
     margin-left: -20px;
-    font-family: Arnoldboecklin, fantasy;
+    font-family: fantasy;
 }
 
 .card {

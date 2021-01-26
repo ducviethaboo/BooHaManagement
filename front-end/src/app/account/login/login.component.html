@@ -17,24 +17,34 @@
         <p id="phone"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
           </svg>: 0387 800 002</p>
-        <div class="card shadow-lg p-3 mb-5 rounded">
+        <div class="card shadow-none p-3 mb-5 rounded">
             <b style="text-align: center;">Đăng nhập vào hệ thống</b>
             <div class="card-body mt-3">
-                <div *ngIf="error">
-                    <p style="text-align: center;" class="text-danger">{{ error }}</p>
-                </div>
                 <div class="mb-3">
                     <mat-form-field class="example-full-width">
-                        <input [(ngModel)]="account" name="account" type="text" matInput placeholder="Tài khoản">
+                        <input [(ngModel)]="account" name="account" required #accounts='ngModel' [class.is-invalid]="accounts.invalid && accounts.touched" type="text" matInput placeholder="Tài khoản">
                     </mat-form-field>
+                    <div *ngIf="accounts.invalid && (accounts.dirty || accounts.touched)">
+                        <small class="text-danger">
+                        *Tài khoản không được để trống
+                        </small>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <mat-form-field class="example-full-width">
-                        <input [(ngModel)]="password" name="pass" matInput [type]="hide ? 'password' : 'text'" placeholder="Mật khẩu">
+                        <input [(ngModel)]="password" name="pass" pattern="[\w]+[\w]{5,}" required #passwords='ngModel' [class.is-invalid]="passwords.invalid && passwords.touched" matInput [type]="hide ? 'password' : 'text'" placeholder="Mật khẩu">
                         <a mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                         </a>
                     </mat-form-field>
+                    <div *ngIf="passwords.errors && (passwords.valid || passwords.touched)">
+                        <small class="text-danger" *ngIf="passwords.errors.required">*Mật khẩu không được để trống</small>
+                        <small class="text-danger" *ngIf="passwords.errors.pattern">*Mật khẩu phải hơn 6 ký tự và không được dùng ký tự
+          đặc biệt</small>
+                    </div>
+                </div>
+                <div *ngIf="error">
+                    <p style="text-align: center;" class="text-danger">{{ error }}</p>
                 </div>
                 <div style="text-align: center;" class="mb-3">
                     <button (click)="login()" class="btn">Đăng nhập</button>
